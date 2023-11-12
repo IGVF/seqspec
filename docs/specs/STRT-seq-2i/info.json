@@ -1,0 +1,15 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": null,
+  "sequencer": null,
+  "name": "STRT-seq-2i",
+  "doi": "https://doi.org/10.1038/s41598-017-16546-4",
+  "publication_date": "27 November 2017",
+  "description": "STRT-seq performed on microwells with dual-index 5 prime",
+  "modalities": [
+    "RNA"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/STRT-seq_family.html",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/STRT-seq-2i",
+  "basename": "STRT-seq-2i"
+}

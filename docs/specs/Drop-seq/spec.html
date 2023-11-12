@@ -1,0 +1,300 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">Drop-seq/Illumina</h1>
+  <ul>
+    <li>
+      <a href="https://doi.org/10.1016/j.cell.2015.05.002"
+        >https://doi.org/10.1016/j.cell.2015.05.002</a
+      >
+    </li>
+    <li>
+      Droplet single cell rna seq with beads
+    </li>
+    <li>rna</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">rna</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5><primer_read1>GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTACGT</primer_read1><barcode>NNNNNNNNNNNN</barcode><umi>NNNNNNNN</umi><poly_T>X</poly_T><cdna>X</cdna><ME2>CTGTCTCTTATACACATCT</ME2><s7>CCGAGCCCACGAGAC</s7><index7>NNNNNNNN</index7><illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre>
+    
+<ol><li>
+    <details>
+    <summary>illumina_p5</summary>
+    <ul>
+      <li>region_type: illumina_p5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>r1_primer</summary>
+    <ul>
+      <li>region_type: primer_read1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<primer_read1>GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTACGT</primer_read1></pre
+        >
+      </li>
+      <li>min_len: 39</li>
+      <li>max_len: 39</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>cell_bc</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 12</li>
+      <li>max_len: 12</li>
+      <li>onlist: cell_bc_onlist.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>polyT</summary>
+    <ul>
+      <li>region_type: poly_T</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<poly_T>X</poly_T></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>cdna</summary>
+    <ul>
+      <li>region_type: cdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>X</cdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ME</summary>
+    <ul>
+      <li>region_type: ME2</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME2>CTGTCTCTTATACACATCT</ME2></pre
+        >
+      </li>
+      <li>min_len: 19</li>
+      <li>max_len: 19</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>s7</summary>
+    <ul>
+      <li>region_type: s7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s7>CCGAGCCCACGAGAC</s7></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>i7_index</summary>
+    <ul>
+      <li>region_type: index7</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: i7_index_onlist.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>illumina_p7</summary>
+    <ul>
+      <li>region_type: illumina_p7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre
+        >
+      </li>
+      <li>min_len: 24</li>
+      <li>max_len: 24</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

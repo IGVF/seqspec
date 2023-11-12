@@ -1,0 +1,1014 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">10x-ATAC-RNA-MULTI/Illumina</h1>
+  <ul>
+    <li>
+      <a href="https://doi.org/10.1038/s41592-019-0433-8"
+        >https://doi.org/10.1038/s41592-019-0433-8</a
+      >
+    </li>
+    <li>
+      Single Cell Multiome ATAC + Gene Expression + MULTI-seq
+    </li>
+    <li>rna, atac, tag</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">10x-ATAC-RNA-MULTI-seq RNA</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5><truseq_read1>TCTTTCCCTACACGACGCTCTTCCGATCT</truseq_read1><barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi><cdna>X</cdna><truseq_read2>AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC</truseq_read2><index7>NNNNNNNN</index7><illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre>
+    
+<ol><li>
+    <details>
+    <summary>RNA-illumina_p5</summary>
+    <ul>
+      <li>region_type: illumina_p5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-truseq_read1</summary>
+    <ul>
+      <li>region_type: truseq_read1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<truseq_read1>TCTTTCCCTACACGACGCTCTTCCGATCT</truseq_read1></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 28</li>
+      <li>max_len: 28</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>RNA-cell_barcode</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: 737K-august-2016.txt (md5: f62a276e262fdd85262a889d0f48556b)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 12</li>
+      <li>max_len: 12</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>X</cdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>RNA-cDNA</summary>
+    <ul>
+      <li>region_type: cdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>X</cdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-truseq_read2</summary>
+    <ul>
+      <li>region_type: truseq_read2</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<truseq_read2>AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC</truseq_read2></pre
+        >
+      </li>
+      <li>min_len: 34</li>
+      <li>max_len: 34</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-I1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>RNA-index7</summary>
+    <ul>
+      <li>region_type: index7</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: index7_onlist_RNA-ATAC.txt (md5: fcb5fe7d14ffc9984cd5450413c7a742)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>RNA-illumina_p7</summary>
+    <ul>
+      <li>region_type: illumina_p7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre
+        >
+      </li>
+      <li>min_len: 24</li>
+      <li>max_len: 24</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">ATAC</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5><barcode>NNNNNNNNNNNNNNNN</barcode><fastq>CGCGTCTG</fastq><s5>TCGTCGGCAGCGTC</s5><ME1>AGATGTGTATAAGAGACAG</ME1><gdna>X</gdna><gdna>X</gdna><ME2>CTGTCTCTTATACACATCT</ME2><s7>CCGAGCCCACGAGAC</s7><index7>NNNNNNNN</index7><illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre>
+    
+<ol><li>
+    <details>
+    <summary>ATAC-illumina_p5</summary>
+    <ul>
+      <li>region_type: illumina_p5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-I2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>ATAC-cell_barcode</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: 737K-cratac-v1.txt (md5: ab645450cf30cc51077f6c030b665297)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-spacer</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<fastq>CGCGTCTG</fastq></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-nextera_read1</summary>
+    <ul>
+      <li>region_type: nextera_read1</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s5>TCGTCGGCAGCGTC</s5><ME1>AGATGTGTATAAGAGACAG</ME1></pre
+        >
+      </li>
+      <li>min_len: 33</li>
+      <li>max_len: 33</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>s5</summary>
+    <ul>
+      <li>region_type: s5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s5>TCGTCGGCAGCGTC</s5></pre
+        >
+      </li>
+      <li>min_len: 14</li>
+      <li>max_len: 14</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ME1</summary>
+    <ul>
+      <li>region_type: ME1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME1>AGATGTGTATAAGAGACAG</ME1></pre
+        >
+      </li>
+      <li>min_len: 19</li>
+      <li>max_len: 19</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gDNA-1</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gDNA-2</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-nextera_read2</summary>
+    <ul>
+      <li>region_type: nextera_read2</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME2>CTGTCTCTTATACACATCT</ME2><s7>CCGAGCCCACGAGAC</s7></pre
+        >
+      </li>
+      <li>min_len: 34</li>
+      <li>max_len: 34</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>ME2</summary>
+    <ul>
+      <li>region_type: ME2</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME2>CTGTCTCTTATACACATCT</ME2></pre
+        >
+      </li>
+      <li>min_len: 19</li>
+      <li>max_len: 19</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>s7</summary>
+    <ul>
+      <li>region_type: s7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s7>CCGAGCCCACGAGAC</s7></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-I1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>ATAC-index7</summary>
+    <ul>
+      <li>region_type: index7</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: index7_onlist_RNA-ATAC.txt (md5: fcb5fe7d14ffc9984cd5450413c7a742)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ATAC-illumina_p7</summary>
+    <ul>
+      <li>region_type: illumina_p7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre
+        >
+      </li>
+      <li>min_len: 24</li>
+      <li>max_len: 24</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">MULTI sample barcode</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5><truseq_read1>TCTTTCCCTACACGACGCTCTTCCGATCT</truseq_read1><barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi><barcode>NNNNNNNN</barcode><truseq_read2>TGGAATTCTCGGGTGCCAAGGAACTCCAGTCAC</truseq_read2><index7>NNNNNNNN</index7><illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre>
+    
+<ol><li>
+    <details>
+    <summary>MULTI-illumina_p5</summary>
+    <ul>
+      <li>region_type: illumina_p5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-truseq_read1</summary>
+    <ul>
+      <li>region_type: truseq_read1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<truseq_read1>TCTTTCCCTACACGACGCTCTTCCGATCT</truseq_read1></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 28</li>
+      <li>max_len: 28</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>barcode</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: 737K-august-2016.txt (md5: f62a276e262fdd85262a889d0f48556b)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 12</li>
+      <li>max_len: 12</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>MULTI-seq barcode</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: MULTIbc_onlist.txt (md5: 66d841ec290d6c93e4b02638f97f3c23)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-smallrna truseq_read2</summary>
+    <ul>
+      <li>region_type: truseq_read2</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<truseq_read2>TGGAATTCTCGGGTGCCAAGGAACTCCAGTCAC</truseq_read2></pre
+        >
+      </li>
+      <li>min_len: 33</li>
+      <li>max_len: 33</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-I1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>MULTI-index7</summary>
+    <ul>
+      <li>region_type: index7</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: index7_onlist_MULTI.txt (md5: dea9fa960eb2f11b18d47f978c596a79)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>MULTI-illumina_p7</summary>
+    <ul>
+      <li>region_type: illumina_p7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre
+        >
+      </li>
+      <li>min_len: 24</li>
+      <li>max_len: 24</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

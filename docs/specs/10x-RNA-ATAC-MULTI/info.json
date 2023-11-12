@@ -1,0 +1,17 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": "10x-ATAC-RNA-MULTI",
+  "sequencer": "Illumina NovaSeq X",
+  "name": "10x-ATAC-RNA-MULTI/Illumina",
+  "doi": "https://doi.org/10.1038/s41592-019-0433-8",
+  "publication_date": "17 June 2019",
+  "description": "Single Cell Multiome ATAC + Gene Expression + MULTI-seq",
+  "modalities": [
+    "rna",
+    "atac",
+    "tag"
+  ],
+  "lib_struct": "https://igvf.github.io/seqspec/",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/10x-RNA-ATAC-MULTI",
+  "basename": "10x-RNA-ATAC-MULTI"
+}

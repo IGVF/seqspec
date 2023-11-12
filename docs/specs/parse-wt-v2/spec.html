@@ -1,0 +1,237 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">WT Mega v2</h1>
+  <ul>
+    <li>
+      <a href=""
+        ></a
+      >
+    </li>
+    <li>
+      split-pool ligation-based transcriptome sequencing
+    </li>
+    <li>rna</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">Read 1 sequence Fastq</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<cdna>X</cdna></pre>
+    
+<ol><li>
+    <details>
+    <summary>cDNA</summary>
+    <ul>
+      <li>region_type: cdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>X</cdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 150</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">Read 2 umi and barcode FASTQ</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<umi>NNNNNNNNNN</umi><barcode>NNNNNNNN</barcode><linker>GTGGCCGATGTTTCGCATCGGCGTACGACT</linker><barcode>NNNNNNNN</barcode><linker>ATCCACGTGCTTGAGACTGTGG</linker><barcode>NNNNNNNN</barcode></pre>
+    
+<ol><li>
+    <details>
+    <summary>umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 10</li>
+      <li>max_len: 10</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>barcode-1</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: barcode-1_onlist_v2.txt (md5: 5c3b70034e9cef5de735dc9d4f3fdbde)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>linker-1</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>GTGGCCGATGTTTCGCATCGGCGTACGACT</linker></pre
+        >
+      </li>
+      <li>min_len: 30</li>
+      <li>max_len: 30</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>barcode-2</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: barcode-23_onlist.txt (md5: 1452e8ef104e6edf686fab8956172072)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>linker-3</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>ATCCACGTGCTTGAGACTGTGG</linker></pre
+        >
+      </li>
+      <li>min_len: 22</li>
+      <li>max_len: 22</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>barcode-3</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: barcode-23_onlist.txt (md5: 1452e8ef104e6edf686fab8956172072)</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

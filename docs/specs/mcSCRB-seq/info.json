@@ -1,0 +1,15 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": null,
+  "sequencer": null,
+  "name": "mcSCRB-seq",
+  "doi": "https://doi.org/10.1038/s41467-018-05347-6",
+  "publication_date": "26 July 2018",
+  "description": "molecular crowding single-cell RNA barcoding and sequencing",
+  "modalities": [
+    "RNA"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/SCRB-seq.html",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/mcSCRB-seq",
+  "basename": "mcSCRB-seq"
+}

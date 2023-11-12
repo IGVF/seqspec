@@ -1,0 +1,15 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": null,
+  "sequencer": null,
+  "name": "Microwell-seq",
+  "doi": "https://doi.org/10.1016/j.cell.2018.02.001",
+  "publication_date": "22 February 2018",
+  "description": "a high-throughput and low-cost scRNA-seq platform using simple, inexpensive devices",
+  "modalities": [
+    "RNA"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/Microwell-seq",
+  "basename": "Microwell-seq"
+}

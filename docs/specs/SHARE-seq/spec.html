@@ -1,0 +1,621 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">SHARE-Seq</h1>
+  <ul>
+    <li>
+      <a href="https://doi.org/10.1016/j.cell.2020.09.056"
+        >https://doi.org/10.1016/j.cell.2020.09.056</a
+      >
+    </li>
+    <li>
+      Simultaneous high-throughput atac and rna expression in the same single cell
+    </li>
+    <li>atac, rna</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">atac</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna><gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna><linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre>
+    
+<ol><li>
+    <details>
+    <summary>BMMC_single_donor_ATAC_L001_R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 50</li>
+      <li>max_len: 50</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gdna-1</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 50</li>
+      <li>max_len: 50</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>BMMC_single_donor_ATAC_L001_R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna><linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 149</li>
+      <li>max_len: 149</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gdna-2</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 50</li>
+      <li>max_len: 50</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-raw-cell-barcode</summary>
+    <ul>
+      <li>region_type: random</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 99</li>
+      <li>max_len: 99</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>atac-linker1</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>TCGGACGATCATGGG</linker></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-cell-barcode1</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R1_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-linker2</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker></pre
+        >
+      </li>
+      <li>min_len: 30</li>
+      <li>max_len: 30</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-cell-barcode2</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R2_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-linker3</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker></pre
+        >
+      </li>
+      <li>min_len: 30</li>
+      <li>max_len: 30</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac-cell-barcode3</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R3_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">rna</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna><umi>NNNNNNNNNN</umi><poly_A>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</poly_A><linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre>
+    
+<ol><li>
+    <details>
+    <summary>BMMC_single_donor_RNA_L001_R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna></pre
+        >
+      </li>
+      <li>min_len: 50</li>
+      <li>max_len: 50</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>cdna</summary>
+    <ul>
+      <li>region_type: cdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna></pre
+        >
+      </li>
+      <li>min_len: 50</li>
+      <li>max_len: 50</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>BMMC_single_donor_RNA_L001_R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNN</umi><poly_A>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</poly_A><linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 149</li>
+      <li>max_len: 149</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 10</li>
+      <li>max_len: 10</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>poly_A</summary>
+    <ul>
+      <li>region_type: poly_A</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<poly_A>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</poly_A></pre
+        >
+      </li>
+      <li>min_len: 40</li>
+      <li>max_len: 40</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-raw-cell-barcode</summary>
+    <ul>
+      <li>region_type: random</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>TCGGACGATCATGGG</linker><barcode>NNNNNNNN</barcode><linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker><barcode>NNNNNNNN</barcode><linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker><barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 99</li>
+      <li>max_len: 99</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>rna-linker1</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>TCGGACGATCATGGG</linker></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-cell-barcode1</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R1_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-linker2</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>CAAGTATGCAGCGCGCTCAAGCACGTGGAT</linker></pre
+        >
+      </li>
+      <li>min_len: 30</li>
+      <li>max_len: 30</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-cell-barcode2</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R2_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-linker3</summary>
+    <ul>
+      <li>region_type: linker</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<linker>AGTCGTACGCCGATGCGAAACATCGGCCAC</linker></pre
+        >
+      </li>
+      <li>min_len: 30</li>
+      <li>max_len: 30</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna-cell-barcode3</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: R3_human_barcodes.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

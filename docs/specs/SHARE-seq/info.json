@@ -1,0 +1,16 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": "SHARE-Seq",
+  "sequencer": "Illumina",
+  "name": "SHARE-Seq",
+  "doi": "https://doi.org/10.1016/j.cell.2020.09.056",
+  "publication_date": "23 October 2020",
+  "description": "Simultaneous high-throughput atac and rna expression in the same single cell",
+  "modalities": [
+    "atac",
+    "rna"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/SHARE-seq.html",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/SHARE-seq",
+  "basename": "SHARE-seq"
+}

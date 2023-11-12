@@ -1,0 +1,15 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": null,
+  "sequencer": null,
+  "name": "10x Genomics",
+  "doi": "https://doi.org/10.1038/nmeth.1315",
+  "publication_date": "06 April 2009",
+  "description": "first method to sequence the whole transcriptome (mRNA) of a single cell",
+  "modalities": [
+    "RNA"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/tang2009.html",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/Tang2009",
+  "basename": "Tang2009"
+}

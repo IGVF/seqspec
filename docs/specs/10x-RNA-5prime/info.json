@@ -1,0 +1,15 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": "10xRNA5prime",
+  "sequencer": "Illumina",
+  "name": "10x-RNA-5prime",
+  "doi": "https://doi.org/10.1038/ncomms14049",
+  "publication_date": null,
+  "description": "10x 5 prime single-cell RNA-seq",
+  "modalities": [
+    "rna"
+  ],
+  "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium5.html",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/10x-RNA-5prime",
+  "basename": "10x-RNA-5prime"
+}

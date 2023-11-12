@@ -1,0 +1,16 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": "",
+  "sequencer": "NextSeq2000 p3 kit",
+  "name": "CRISPRa_screening",
+  "doi": "https://doi.org/10.1101/2023.03.28.534017",
+  "publication_date": "28 March 2023",
+  "description": "Multiplex, single-cell CRISPRa screening for cell type specific regulatory elements",
+  "modalities": [
+    "rna",
+    "crispr"
+  ],
+  "lib_struct": "28/10/10/90",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/scCRISPRa",
+  "basename": "scCRISPRa"
+}

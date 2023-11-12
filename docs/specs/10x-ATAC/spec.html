@@ -1,0 +1,444 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">10x-ATAC</h1>
+  <ul>
+    <li>
+      <a href="https://www.10xgenomics.com/blog/demonstrated-protocol-for-nuclei-isolation-for-single-cell-atac-solution"
+        >https://www.10xgenomics.com/blog/demonstrated-protocol-for-nuclei-isolation-for-single-cell-atac-solution</a
+      >
+    </li>
+    <li>
+      Single Cell ATAC
+    </li>
+    <li>atac</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">atac</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5><barcode>NNNNNNNNNNNNNNNN</barcode><s5>TCGTCGGCAGCGTC</s5><ME1>AGATGTGTATAAGAGACAG</ME1><gdna>X</gdna><gdna>X</gdna><ME2>CTGTCTCTTATACACATCT</ME2><s7>CCGAGCCCACGAGAC</s7><index7>NNNNNNNN</index7><illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre>
+    
+<ol><li>
+    <details>
+    <summary>illumina_p5</summary>
+    <ul>
+      <li>region_type: illumina_p5</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p5>AATGATACGGCGACCACCGAGATCTACAC</illumina_p5></pre
+        >
+      </li>
+      <li>min_len: 29</li>
+      <li>max_len: 29</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>I2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>cell_bc</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: 737K-cratac-v1.txt.gz (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>nextera_read1</summary>
+    <ul>
+      <li>region_type: nextera_read1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s5>TCGTCGGCAGCGTC</s5><ME1>AGATGTGTATAAGAGACAG</ME1></pre
+        >
+      </li>
+      <li>min_len: 33</li>
+      <li>max_len: 33</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>s5</summary>
+    <ul>
+      <li>region_type: s5</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s5>TCGTCGGCAGCGTC</s5></pre
+        >
+      </li>
+      <li>min_len: 14</li>
+      <li>max_len: 14</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>ME1</summary>
+    <ul>
+      <li>region_type: ME1</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME1>AGATGTGTATAAGAGACAG</ME1></pre
+        >
+      </li>
+      <li>min_len: 19</li>
+      <li>max_len: 19</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>R1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gdna-1</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>R2.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gdna-2</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>X</gdna></pre
+        >
+      </li>
+      <li>min_len: 1</li>
+      <li>max_len: 98</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>nextera_read2</summary>
+    <ul>
+      <li>region_type: nextera_read2</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME2>CTGTCTCTTATACACATCT</ME2><s7>CCGAGCCCACGAGAC</s7></pre
+        >
+      </li>
+      <li>min_len: 34</li>
+      <li>max_len: 34</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>ME2</summary>
+    <ul>
+      <li>region_type: ME2</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<ME2>CTGTCTCTTATACACATCT</ME2></pre
+        >
+      </li>
+      <li>min_len: 19</li>
+      <li>max_len: 19</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>s7</summary>
+    <ul>
+      <li>region_type: s7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<s7>CCGAGCCCACGAGAC</s7></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>I1.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>index7</summary>
+    <ul>
+      <li>region_type: index7</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<index7>NNNNNNNN</index7></pre
+        >
+      </li>
+      <li>min_len: 8</li>
+      <li>max_len: 8</li>
+      <li>onlist: index7_onlist.txt (md5: None)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>illumina_p7</summary>
+    <ul>
+      <li>region_type: illumina_p7</li>
+      <li>sequence_type: fixed</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<illumina_p7>ATCTCGTATGCCGTCTTCTGCTTG</illumina_p7></pre
+        >
+      </li>
+      <li>min_len: 24</li>
+      <li>max_len: 24</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

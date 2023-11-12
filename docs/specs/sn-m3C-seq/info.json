@@ -1,0 +1,16 @@
+{
+  "seqspec_version": "0.0.0",
+  "assay": "sn-m3C-seq",
+  "sequencer": "Illumina NextSeq500",
+  "name": "sn-m3C-seq",
+  "doi": "https://doi.org/10.1038/s41592-019-0547-z",
+  "publication_date": "09 September 2019",
+  "description": "Single-nucleus methyl-3C sequencing (sn-m3C-seq). Specification assumes 2x151bp paired-end reads with 10bp dual indices based on snmC-seq3 and chromatin confirmation capture. Note that all reads are simultaneously bisulfite-converted gDNA containing potential 3C ligation junctions.",
+  "modalities": [
+    "methyl",
+    "hic"
+  ],
+  "lib_struct": "",
+  "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/sn-m3C-seq",
+  "basename": "sn-m3C-seq"
+}

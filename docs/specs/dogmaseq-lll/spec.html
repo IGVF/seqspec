@@ -1,0 +1,462 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+      highlight {
+      color: green;
+      }
+
+      illumina_p5 {color:#08519c;}
+      illumina_p7 {color:#a50f15;}
+      nextera_read1 {color:#bcbddc;}
+      nextera_read2 {color:#9ebcda;}
+      truseq_read1 {color:#4a1486;}
+      truseq_read2 {color:#6a51a3;}
+      ME {color:#969696;}
+      s5 {color:#6baed6;}
+      s7 {color:#fc9272;}
+      barcode {color:#f768a1;}
+      umi {color:#807dba;}
+      gDNA {color:#f03b20;}
+    cDNA {color:#7e331f;}
+      </style>
+    </head>
+    <body>
+      <div style="width: 75%; margin: 0 auto">
+        <h6><a href="../../index.html">Back</a></h6>
+        <div id="assay">
+          <h1 style="text-align: center">DOGMAseq-LLL/Illumina</h1>
+  <ul>
+    <li>
+      <a href="https://doi.org/10.1186/s13059-022-02698-8"
+        >https://doi.org/10.1186/s13059-022-02698-8</a
+      >
+    </li>
+    <li>
+      DOGMAseq Low Loss Lysis (LLL) is a single-cell multi-omics assay that simultaneously measures protein, RNA, and chromatin accessibility in single cells. The assay is based on the DOGMAseq technology, which uses a DNA-barcoded antibody library to capture proteins of interest, followed by a single-cell RNA-seq protocol and a single-cell ATAC-seq protocol. The DOGMAseq-LLL assay is designed to be compatible with the 10x Genomics Chromium platform.
+    </li>
+    <li>protein, rna, atac</li>
+  </ul>
+    
+        </div>
+        <div id="assay_spec">
+          <h2>Final library</h2>
+          
+  <h6 style="text-align: center">protein</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi><protein>NNNNNNNNNNNNNNN</protein></pre>
+    
+<ol><li>
+    <details>
+    <summary>protein_R1_SRR18677632.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 28</li>
+      <li>max_len: 28</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>protein_cell_bc</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: RNA-737K-arc-v1.txt (md5: a88cd21e801ae6f9a7d9a48b67ccf693)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>protein_umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 12</li>
+      <li>max_len: 12</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>protein_R2_SRR18677632.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<protein>NNNNNNNNNNNNNNN</protein></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>protein</summary>
+    <ul>
+      <li>region_type: protein</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<protein>NNNNNNNNNNNNNNN</protein></pre
+        >
+      </li>
+      <li>min_len: 15</li>
+      <li>max_len: 15</li>
+      <li>onlist: protein_feature_barcodes.txt (md5: b5920c1fc1d22927607c31c96f5cf03e)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">rna</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi><cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna></pre>
+    
+<ol><li>
+    <details>
+    <summary>rna_R1_SRR18677629.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode><umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 28</li>
+      <li>max_len: 28</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>rna_cell_bc</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: RNA-737K-arc-v1.txt (md5: a88cd21e801ae6f9a7d9a48b67ccf693)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna_umi</summary>
+    <ul>
+      <li>region_type: umi</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<umi>NNNNNNNNNNNN</umi></pre
+        >
+      </li>
+      <li>min_len: 12</li>
+      <li>max_len: 12</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>rna_R2_SRR18677629.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna></pre
+        >
+      </li>
+      <li>min_len: 102</li>
+      <li>max_len: 102</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>cdna</summary>
+    <ul>
+      <li>region_type: cdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<cdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</cdna></pre
+        >
+      </li>
+      <li>min_len: 102</li>
+      <li>max_len: 102</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    
+    </li></ol>
+  <h6 style="text-align: center">atac</h6>
+  <pre
+    style="overflow-x: auto; text-align: left; background-color: #f6f8fa"
+  >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna><barcode>NNNNNNNNNNNNNNNN</barcode><gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre>
+    
+<ol><li>
+    <details>
+    <summary>atac_R1_SRR18677633.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 52</li>
+      <li>max_len: 52</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gDNA-1</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 52</li>
+      <li>max_len: 52</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac_R2_SRR18677633.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>atac_cell_bc</summary>
+    <ul>
+      <li>region_type: barcode</li>
+      <li>sequence_type: onlist</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<barcode>NNNNNNNNNNNNNNNN</barcode></pre
+        >
+      </li>
+      <li>min_len: 16</li>
+      <li>max_len: 16</li>
+      <li>onlist: ATA-737K-arc-v1.txt (md5: 3f9fc0f6ef9d72540ab010d0b5348aa1)</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    </li><li><details>
+    <summary>atac_R3_SRR18677633.fastq.gz</summary>
+    <ul>
+      <li>region_type: fastq</li>
+      <li>sequence_type: joined</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 52</li>
+      <li>max_len: 52</li>
+      <li>onlist: None</li>
+      <li> regions: <ol><li><details>
+    <summary>gDNA-2</summary>
+    <ul>
+      <li>region_type: gdna</li>
+      <li>sequence_type: random</li>
+      <li>
+        sequence:
+        <pre
+        style="
+        overflow-x: auto;
+        text-align: left;
+        margin: 0;
+        display: inline;
+        "
+        >
+<gdna>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</gdna></pre
+        >
+      </li>
+      <li>min_len: 52</li>
+      <li>max_len: 52</li>
+      <li>onlist: None</li>
+      <li> regions: 
+      </li>
+  </details>
+    </li></ol>
+      </li>
+  </details>
+    
+    </li></ol>
+        </div>
+      </div>
+    </body>
+  </html>
+    

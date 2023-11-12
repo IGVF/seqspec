@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      function formatRow(assay, index = 0) {
+        // use backticks and insert the variables into the string
+        return `
+                <tr>
+                    <td>${index}</td>
+                    <td>${assay.name}</td>
+                    <td><a href=${assay.doi} target="_blank">${assay.assay}</a></td>
+                    <td>${assay.sequencer}</td>
+                    <td>${assay.modalities}</td>
+                    <td>${assay.publication_date}</td>
+                    <td><a href="specs/${assay.basename}/spec.html">View</a></td>
+                    <td><a href=${assay.GitHub} target="_blank">Edit</a></td>
+                </tr>
+            `;
+      }
+      function formatRows(assays) {
+        return assays.map((assay, idx) => formatRow(assay, idx + 1)).join("");
+      }
+
+      // using jquery, load the json file, only when the document is ready
+      $(document).ready(function () {
+        $.getJSON("specs/all_specs.json", function (data) {
+          // for each item in the json file, append a row to the table
+          $("#metadata-table tbody").append(formatRows(data));
+        });
+      });
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        /* background-color: #f0f0f0; */
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #ffffff; /* White background for the table container */
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 1000px;
+        border: 1px solid #e0e0e0; /* Light border for the table */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Subtle shadow around the table */
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid #e0e0e0; /* Horizontal borders between rows */
+        text-align: left;
+        padding: 15px 8px; /* Increased vertical padding for rows */
+      }
+
+      th {
+        background-color: #f7f7f7; /* Light gray header */
+      }
+
+      tr:hover {
+        background-color: #fafafa; /* Hover effect for rows */
+      }
+      a[target="_blank"]::after {
+        content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+        margin: 0 3px 0 5px;
+      }
+
+      @media (max-width: 600px) {
+        th,
+        td {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center">seqspec</h1>
+      <div class="container">
+        <table id="metadata-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Assay</th>
+              <th>Sequencer</th>
+              <th>Modalities</th>
+              <th>Date</th>
+              <th>seqspec</th>
+              <th>GitHub</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
