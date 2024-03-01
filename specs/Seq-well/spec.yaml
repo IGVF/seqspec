@@ -1,17 +1,21 @@
 !Assay
 seqspec_version: 0.0.0
-assay: null
-sequencer: null
+assay_id: null
 name: Seq-well
 doi: https://doi.org/10.1038/nmeth.4179
-publication_date: 13 February 2017
+date: 13 February 2017
 description: Barcoded mRNA capture beads and single cells are sealed in an array of
   subnanoliter wells using a semipermeable membrane, enabling efficient cell lysis
   and transcript capture
 modalities:
 - RNA
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/Drop-seq.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: RNA
   region_type: RNA

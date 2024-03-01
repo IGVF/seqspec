@@ -1,15 +1,19 @@
 !Assay
 seqspec_version: 0.0.0
-assay: null
-sequencer: null
+assay_id: null
 name: mcSCRB-seq
 doi: https://doi.org/10.1038/s41467-018-05347-6
-publication_date: 26 July 2018
+date: 26 July 2018
 description: molecular crowding single-cell RNA barcoding and sequencing
 modalities:
 - RNA
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/SCRB-seq.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: RNA
   region_type: RNA

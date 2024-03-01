@@ -1,16 +1,20 @@
 !Assay
 seqspec_version: 0.0.0
-assay: SugarSeq
-sequencer: Illumina NextSeq
+assay_id: SugarSeq
 name: SugarSeq/Illumina
 doi: ''
-publication_date: ''
+date: ''
 description: mtags and glycans
 modalities:
 - rna
 - tag
 lib_struct: ''
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina NextSeq
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   parent_id: null
   region_id: rna

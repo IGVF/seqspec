@@ -1,17 +1,21 @@
 !Assay
-assay: ''
-sequencer: NextSeq2000 p3 kit
+assay_id: ''
 seqspec_version: 0.0.0
 name: CRISPRa_screening
 doi: https://doi.org/10.1101/2023.03.28.534017
-publication_date: 28 March 2023
+date: 28 March 2023
 description: Multiplex, single-cell CRISPRa screening for cell type specific regulatory
   elements
 modalities:
 - rna
 - crispr
 lib_struct: 28/10/10/90
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: NextSeq2000 p3 kit
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   parent_id: null
   region_id: rna

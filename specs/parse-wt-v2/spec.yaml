@@ -1,15 +1,19 @@
 !Assay
 seqspec_version: 0.0.0
-assay: WT-Mega-v2
-sequencer: Illumina
+assay_id: WT-Mega-v2
 doi: ""
-publication_date: ""
+date: ""
 name: WT Mega v2
 description: split-pool ligation-based transcriptome sequencing
 modalities:
 - rna
 lib_struct: ""
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: R1.fastq.gz
   region_type: fastq

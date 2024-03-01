@@ -1,15 +1,19 @@
 !Assay
 seqspec_version: 0.0.0
-assay: null
-sequencer: null
+assay_id: null
 name: sci-RNA-seq3
 doi: https://doi.org/10.1038/s41586-019-0969-x
-publication_date: 20 February 2019
+date: 20 February 2019
 description: combinatorial single-cell RNA-seq 3
 modalities:
 - RNA
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/sci-RNA-seq3.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: RNA
   region_type: RNA

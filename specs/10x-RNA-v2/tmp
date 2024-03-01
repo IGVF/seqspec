@@ -1,17 +1,22 @@
 !Assay
 seqspec_version: 0.0.0
-assay: "MPRA"
+assay_id: "MPRA"
 sequencer: "TODO"
 name: mpra_shendure_assignment_80K
 doi: ""
-publication_date: ""
+date: ""
 description: "Assignment library of the MPRA 80K design (caridac, neuro and random CREs)"
 modalities:
   - rna
   - rna
   - rna
 lib_struct: ""
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec: null
+library_spec:
   - !Region
     parent_id: null
     region_id: assignment

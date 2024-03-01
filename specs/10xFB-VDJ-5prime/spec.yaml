@@ -1,16 +1,20 @@
 !Assay
 seqspec_version: 0.0.0
-assay: 10xVDJ and RNA 5'
-sequencer: Illumina
+assay_id: 10xVDJ and RNA 5'
 name: 10xFB-VDJ-5prime
 doi: https://www.10xgenomics.com/blog/ashg-2016-round-up
 description: 10x single-cell RNA-seq and VDJ 5'
-publication_date: 21 October 2016
+date: 21 October 2016
 modalities:
 - rna
 - vdj
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium5vdjfb.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: rna
   region_type: rna

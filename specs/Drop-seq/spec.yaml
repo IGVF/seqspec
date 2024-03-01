@@ -1,15 +1,19 @@
 !Assay
 seqspec_version: 0.0.0
-assay: Drop-seq
-sequencer: Illumina
+assay_id: Drop-seq
 name: Drop-seq/Illumina
 doi: https://doi.org/10.1016/j.cell.2015.05.002
-publication_date: 21 May 2015
+date: 21 May 2015
 description: Droplet single cell rna seq with beads
 modalities:
 - rna
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/Drop-seq.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: rna
   region_type: rna

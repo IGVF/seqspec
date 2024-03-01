@@ -1,16 +1,20 @@
 !Assay
 seqspec_version: 0.0.0
-assay: 10xFB protein and RNA assay 3'
-sequencer: Illumina
+assay_id: 10xFB protein and RNA assay 3'
 name: 10xFB-3prime
 doi: https://www.10xgenomics.com/blog/san-diego-user-group-meeting-2018-recap
-publication_date: 12 February 2018
+date: 12 February 2018
 description: 10xv3 single-cell RNA-seq & protein 3'
 modalities:
 - rna
 - protein
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium3fb.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: rna
   region_type: rna

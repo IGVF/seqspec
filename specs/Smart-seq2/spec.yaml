@@ -1,15 +1,19 @@
 !Assay
 seqspec_version: 0.0.0
-assay: null
-sequencer: null
+assay_id: null
 name: Smart-seq2
 doi: https://doi.org/10.1038/nprot.2014.006
-publication_date: 02 January 2014
+date: 02 January 2014
 description: full-length rna-seq from individual cells
 modalities:
 - RNA
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/SMART-seq_family.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: RNA
   region_type: RNA

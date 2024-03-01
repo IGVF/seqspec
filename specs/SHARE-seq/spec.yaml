@@ -1,17 +1,21 @@
 !Assay
 seqspec_version: 0.0.0
-assay: SHARE-Seq
+assay_id: SHARE-Seq
 name: SHARE-Seq
-sequencer: Illumina
 doi: https://doi.org/10.1016/j.cell.2020.09.056
-publication_date: 23 October 2020
+date: 23 October 2020
 description: Simultaneous high-throughput atac and rna expression in the same single
   cell
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/SHARE-seq.html
 modalities:
 - atac
 - rna
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: atac
   region_type: atac

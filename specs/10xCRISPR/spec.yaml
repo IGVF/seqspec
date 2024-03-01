@@ -1,16 +1,20 @@
 !Assay
 seqspec_version: 0.0.0
-assay: 10xCRISPR
-sequencer: Illumina
+assay_id: 10xCRISPR
 name: 10xCRISPR
 doi: https://www.sigmaaldrich.com/US/en/collections/press/p265893918
-publication_date: 10 June 2020
+date: 10 June 2020
 description: single-cell crispr screen and rna-seq
 modalities:
 - crispr
 - rna
 lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium3fb.html
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: crispr
   region_type: crispr

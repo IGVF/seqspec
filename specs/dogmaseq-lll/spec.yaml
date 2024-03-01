@@ -1,10 +1,9 @@
 !Assay
 seqspec_version: 0.0.0
-assay: DOGMAseq-LLL
-sequencer: Illumina NovaSeq 6000 (S2 Reagent Kit v1.5)
+assay_id: DOGMAseq-LLL
 name: DOGMAseq-LLL/Illumina
 doi: https://doi.org/10.1186/s13059-022-02698-8
-publication_date: 23 June 2022
+date: 23 June 2022
 description: DOGMAseq Low Loss Lysis (LLL) is a single-cell multi-omics assay that
   simultaneously measures protein, RNA, and chromatin accessibility in single cells.
   The assay is based on the DOGMAseq technology, which uses a DNA-barcoded antibody
@@ -16,7 +15,12 @@ modalities:
 - rna
 - atac
 lib_struct: ""
-assay_spec:
+library_protocol: null
+library_kit: null
+sequence_protocol: Illumina NovaSeq 6000 (S2 Reagent Kit v1.5)
+sequence_kit: null
+sequence_spec: null
+library_spec:
 - !Region
   region_id: protein
   region_type: protein
