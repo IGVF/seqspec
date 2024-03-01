@@ -1,16 +1,20 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "SugarSeq",
-  "sequencer": "Illumina NextSeq",
+  "assay_id": "SugarSeq",
   "name": "SugarSeq/Illumina",
   "doi": "",
-  "publication_date": "",
+  "date": "",
   "description": "mtags and glycans",
   "modalities": [
     "rna",
     "tag"
   ],
   "lib_struct": "",
+  "sequence_protocol": "Illumina NextSeq",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/sugarseq",
   "basename": "sugarseq"
 }

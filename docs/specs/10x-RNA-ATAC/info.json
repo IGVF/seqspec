@@ -1,16 +1,20 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "10xMultiome",
-  "sequencer": "Illumina",
+  "assay_id": "10xMultiome",
   "name": "10x-ATAC-RNA",
   "doi": "https://www.globenewswire.com/en/news-release/2020/09/15/2093690/0/en/10x-Genomics-First-to-Market-With-Product-to-Simultaneously-Capture-Epigenome-and-Transcriptome.html",
-  "publication_date": "15 September 2020",
+  "date": "15 September 2020",
   "description": "Single Cell Multiome ATAC + Gene Expression",
   "modalities": [
     "rna",
     "atac"
   ],
   "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium_multiome.html",
+  "sequence_protocol": "Illumina",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/10x-RNA-ATAC",
   "basename": "10x-RNA-ATAC"
 }

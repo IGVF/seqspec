@@ -1,15 +1,19 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "BD-Rhapsody-EB",
-  "sequencer": "Illumina",
+  "assay_id": "BD-Rhapsody-EB",
   "name": "BD-Rhapsody-EB",
   "doi": "https://scomix.bd.com/hc/en-us/articles/6990647359501-Rhapsody-WTA-Demo-Datasets-with-Enhanced-Cell-Capture-Beads",
-  "publication_date": "31 August 2022",
+  "date": "31 August 2022",
   "description": "BD Rhapsody WTA is a nanowell-based commercial system that uses a split-pool (Enahnced Beads-v2) approach to generate oligos on magnetic beads.",
   "modalities": [
     "rna"
   ],
   "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/BD_Rhapsody.html",
+  "sequence_protocol": "Illumina",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/BD-Rhapsody-EB",
   "basename": "BD-Rhapsody-EB"
 }

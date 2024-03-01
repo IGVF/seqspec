@@ -1,16 +1,20 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "snmCT-seq",
-  "sequencer": "Illumina NextSeq500",
+  "assay_id": "snmCT-seq",
   "name": "snmCT-seq",
   "doi": "https://doi.org/10.1016/j.xgen.2022.100107",
-  "publication_date": "09 March 2022",
+  "date": "09 March 2022",
   "description": "Single-nucleus methylcytosine and transcriptome sequencing (snmCT-seq). Specification assumes 2x151bp paired-end reads with 10bp dual indices based on snmC-seq3 and SMART-seq2. Bisulfite-converted gDNA reads (methyl) and cDNA reads (RNA) are separated in silico.",
   "modalities": [
     "methyl",
     "rna"
   ],
   "lib_struct": "",
+  "sequence_protocol": "Illumina NextSeq500",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/snmCTseq",
   "basename": "snmCTseq"
 }

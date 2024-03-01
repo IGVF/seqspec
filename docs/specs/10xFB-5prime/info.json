@@ -1,16 +1,20 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "10xFB protein and RNA assay 5'",
-  "sequencer": "Illumina",
+  "assay_id": "10xFB protein and RNA assay 5'",
   "name": "10xFB protein and RNA assay 5'",
   "doi": "https://doi.org/10.1038/ncomms14049",
-  "publication_date": null,
+  "date": null,
   "description": "10x single-cell RNA-seq and protein 5'",
   "modalities": [
     "rna",
     "protein"
   ],
   "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium5vdjfb.html",
+  "sequence_protocol": "Illumina",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/10xFB-5prime",
   "basename": "10xFB-5prime"
 }

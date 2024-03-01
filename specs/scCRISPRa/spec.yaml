@@ -14,7 +14,7 @@ library_protocol: null
 library_kit: null
 sequence_protocol: NextSeq2000 p3 kit
 sequence_kit: null
-sequence_spec: null
+sequence_spec: []
 library_spec:
 - !Region
   parent_id: null

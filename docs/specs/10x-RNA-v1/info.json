@@ -1,15 +1,19 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": "10xRNAv1",
-  "sequencer": "Illumina",
+  "assay_id": "10xRNAv1",
   "name": "10x-RNA-v1",
   "doi": "https://www.businesswire.com/news/home/20160415005184/en/10x-Genomics-Announces-Commercial-Availability-of-Single-Cell-3%E2%80%99-Solution-at-the-AACR-Annual-Meeting-2016",
-  "publication_date": "15 April 2016",
+  "date": "15 April 2016",
   "description": "10x Genomics RNA assay v1",
   "modalities": [
     "rna"
   ],
   "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium3v1.html",
+  "sequence_protocol": "Illumina",
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/10x-RNA-v1",
   "basename": "10x-RNA-v1"
 }

@@ -10,7 +10,7 @@ library_protocol: null
 library_kit: null
 sequence_protocol: null
 sequence_kit: null
-sequence_spec: null
+sequence_spec: []
 library_spec:
 - !Region
   region_id: template

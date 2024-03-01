@@ -1,15 +1,19 @@
 {
   "seqspec_version": "0.0.0",
-  "assay": null,
-  "sequencer": null,
+  "assay_id": null,
   "name": "SureCell",
   "doi": "https://doi.org/10.1007/978-1-4939-9240-9_10",
-  "publication_date": "27 April 2019",
+  "date": "27 April 2019",
   "description": "Illumina Bio-Rad SureCell 3' WTA for ddSEQ",
   "modalities": [
     "RNA"
   ],
   "lib_struct": "https://teichlab.github.io/scg_lib_structs/methods_html/SureCell.html",
+  "sequence_protocol": null,
+  "sequence_kit": null,
+  "library_protocol": null,
+  "library_kit": null,
+  "sequence_spec": [],
   "GitHub": "https://github.com/IGVF/seqspec/tree/main/specs/SureCell",
   "basename": "SureCell"
 }
