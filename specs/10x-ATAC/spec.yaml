@@ -12,16 +12,48 @@ library_protocol: null
 library_kit: null
 sequence_protocol: Illumina
 sequence_kit: null
-sequence_spec: []
+sequence_spec:
+- !Read
+  read_id: R1.fastq.gz
+  name: Read 1
+  modality: atac
+  primer_id: nextera_read1
+  min_len: 1
+  max_len: 98
+  strand: pos
+- !Read
+  read_id: I1.fastq.gz
+  name: Index 1 (i7 index)
+  modality: atac
+  primer_id: nextera_read2
+  min_len: 8
+  max_len: 8
+  strand: pos
+- !Read
+  read_id: I2.fastq.gz
+  name: Index 2 (i5 index)
+  modality: atac
+  primer_id: nextera_read1
+  min_len: 16
+  max_len: 16
+  strand: neg
+- !Read
+  read_id: R2.fastq.gz
+  name: Read 2
+  modality: atac
+  primer_id: nextera_read2
+  min_len: 1
+  max_len: 250
+  strand: neg
 library_spec:
 - !Region
   region_id: atac
   region_type: atac
   name: atac
   sequence_type: joined
-  sequence: AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNNNNNTCGTCGGCAGCGTCAGATGTGTATAAGAGACAGXXCTGTCTCTTATACACATCTCCGAGCCCACGAGACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
-  min_len: 146
-  max_len: 340
+  sequence: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXNNNNNNNNNNNNNNNNTCGTCGGCAGCGTCAGATGTGTATAAGAGACAGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXCTGTCTCTTATACACATCTCCGAGCCCACGAGACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
+  min_len: 145
+  max_len: 242
   onlist: null
   regions:
   - !Region
@@ -29,37 +61,26 @@ library_spec:
     region_type: illumina_p5
     name: Illumina P5
     sequence_type: random
-    sequence: AATGATACGGCGACCACCGAGATCTACAC
+    sequence: XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     min_len: 29
     max_len: 29
     onlist: null
     regions: null
     parent_id: atac
   - !Region
-    region_id: I2.fastq.gz
-    region_type: fastq
-    name: Index 2
-    sequence_type: joined
+    region_id: cell_bc
+    region_type: barcode
+    name: Cell Barcode
+    sequence_type: onlist
     sequence: NNNNNNNNNNNNNNNN
     min_len: 16
     max_len: 16
-    onlist: null
+    onlist: !Onlist
+      filename: 737K-cratac-v1.txt.gz
+      md5: null
+      location: local
+    regions: null
     parent_id: atac
-    regions:
-    - !Region
-      region_id: cell_bc
-      region_type: barcode
-      name: Cell Barcode
-      sequence_type: onlist
-      sequence: NNNNNNNNNNNNNNNN
-      min_len: 16
-      max_len: 16
-      onlist: !Onlist
-        filename: 737K-cratac-v1.txt.gz
-        md5: null
-        location: local
-      regions: null
-      parent_id: I2.fastq.gz
   - !Region
     region_id: nextera_read1
     region_type: nextera_read1
@@ -69,73 +90,18 @@ library_spec:
     min_len: 33
     max_len: 33
     onlist: null
-    regions:
-    - !Region
-      region_id: s5
-      region_type: s5
-      name: s5
-      sequence_type: fixed
-      sequence: TCGTCGGCAGCGTC
-      min_len: 14
-      max_len: 14
-      onlist: null
-      regions: null
-      parent_id: nextera_read1
-    - !Region
-      region_id: ME1
-      region_type: ME1
-      name: ME1
-      sequence_type: fixed
-      sequence: AGATGTGTATAAGAGACAG
-      min_len: 19
-      max_len: 19
-      onlist: null
-      regions: null
-      parent_id: nextera_read1
+    regions: null
     parent_id: atac
   - !Region
-    region_id: R1.fastq.gz
-    region_type: fastq
-    name: Read 1 FASTQ
-    sequence_type: joined
-    sequence: X
+    region_id: gdna
+    region_type: gdna
+    name: gdna
+    sequence_type: random
+    sequence: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     min_len: 1
     max_len: 98
     onlist: null
-    regions:
-    - !Region
-      region_id: gdna-1
-      region_type: gdna
-      name: gdna 1
-      sequence_type: random
-      sequence: X
-      min_len: 1
-      max_len: 98
-      onlist: null
-      regions: null
-      parent_id: R1.fastq.gz
-    parent_id: atac
-  - !Region
-    region_id: R2.fastq.gz
-    region_type: fastq
-    name: Read 2 FASTQ
-    sequence_type: joined
-    sequence: X
-    min_len: 1
-    max_len: 98
-    onlist: null
-    regions:
-    - !Region
-      region_id: gdna-2
-      region_type: gdna
-      name: gdna 2
-      sequence_type: random
-      sequence: X
-      min_len: 1
-      max_len: 98
-      onlist: null
-      regions: null
-      parent_id: R2.fastq.gz
+    regions: null
     parent_id: atac
   - !Region
     region_id: nextera_read2
@@ -146,54 +112,21 @@ library_spec:
     min_len: 34
     max_len: 34
     onlist: null
-    regions:
-    - !Region
-      region_id: ME2
-      region_type: ME2
-      name: ME2
-      sequence_type: fixed
-      sequence: CTGTCTCTTATACACATCT
-      min_len: 19
-      max_len: 19
-      onlist: null
-      regions: null
-      parent_id: nextera_read2
-    - !Region
-      region_id: s7
-      region_type: s7
-      name: s7
-      sequence_type: fixed
-      sequence: CCGAGCCCACGAGAC
-      min_len: 15
-      max_len: 15
-      onlist: null
-      regions: null
-      parent_id: nextera_read2
+    regions: null
     parent_id: atac
   - !Region
-    region_id: I1.fastq.gz
-    region_type: fastq
-    name: Index 1 FASTQ
-    sequence_type: joined
+    region_id: index7
+    region_type: index7
+    name: index7
+    sequence_type: onlist
     sequence: NNNNNNNN
     min_len: 8
     max_len: 8
-    onlist: null
-    regions:
-    - !Region
-      region_id: index7
-      region_type: index7
-      name: index7
-      sequence_type: onlist
-      sequence: NNNNNNNN
-      min_len: 8
-      max_len: 8
-      onlist: !Onlist
-        filename: index7_onlist.txt
-        md5: null
-        location: local
-      regions: null
-      parent_id: I1.fastq.gz
+    onlist: !Onlist
+      filename: index7_onlist.txt
+      md5: null
+      location: local
+    regions: null
     parent_id: atac
   - !Region
     region_id: illumina_p7
