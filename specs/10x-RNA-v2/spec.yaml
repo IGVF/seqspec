@@ -61,7 +61,7 @@ library_spec:
       region_type: barcode
       name: Cell Barcode
       sequence_type: onlist
-      sequence: null 
+      sequence: NNNNNNNNNNNNNNNN
       min_len: 16
       max_len: 16
       onlist: !Onlist
