@@ -13,7 +13,55 @@ library_protocol: null
 library_kit: null
 sequence_protocol: Illumina
 sequence_kit: null
-sequence_spec: []
+sequence_spec:
+- !Read
+  read_id: rna-R1.fastq.gz
+  name: Read 1
+  modality: rna
+  primer_id: rna-truseq_read1
+  min_len: 28
+  max_len: 28
+  strand: pos
+- !Read
+  read_id: rna-I1.fastq.gz
+  name: Index 1 (i7 index)
+  modality: rna
+  primer_id: rna-truseq_read2
+  min_len: 8
+  max_len: 8
+  strand: pos
+- !Read
+  read_id: rna-R2.fastq.gz
+  name: Read 2
+  modality: rna
+  primer_id: rna-truseq_read2
+  min_len: 1
+  max_len: 98
+  strand: neg
+- !Read
+  read_id: crispr-R1.fastq.gz
+  name: Read 1
+  modality: rna
+  primer_id: crispr-truseq_read1
+  min_len: 28
+  max_len: 28
+  strand: pos
+- !Read
+  read_id: crispr-I1.fastq.gz
+  name: Index 1 (i7 index)
+  modality: rna
+  primer_id: crispr-truseq_read2
+  min_len: 8
+  max_len: 8
+  strand: pos
+- !Read
+  read_id: crispr-R2.fastq.gz
+  name: Read 2
+  modality: rna
+  primer_id: crispr-truseq_read2
+  min_len: 1
+  max_len: 98
+  strand: neg
 library_spec:
 - !Region
   region_id: crispr

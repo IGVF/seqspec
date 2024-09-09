@@ -43,7 +43,7 @@ sequence_spec:
   modality: atac
   primer_id: nextera_read2
   min_len: 1
-  max_len: 250
+  max_len: 98
   strand: neg
 library_spec:
 - !Region
@@ -107,7 +107,7 @@ library_spec:
     region_id: nextera_read2
     region_type: nextera_read2
     name: nextera_read2
-    sequence_type: joined
+    sequence_type: fixed
     sequence: CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
     min_len: 34
     max_len: 34
