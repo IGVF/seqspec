@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: DOGMAseq-LLL
 name: DOGMAseq-LLL/Illumina
 doi: https://doi.org/10.1186/s13059-022-02698-8
@@ -8,13 +8,13 @@ description: DOGMAseq Low Loss Lysis (LLL) is a single-cell multi-omics assay th
   simultaneously measures protein, RNA, and chromatin accessibility in single cells.
   The assay is based on the DOGMAseq technology, which uses a DNA-barcoded antibody
   library to capture proteins of interest, followed by a single-cell RNA-seq protocol
-  and a single-cell ATAC-seq protocol. The DOGMAseq-LLL assay is designed to be
-  compatible with the 10x Genomics Chromium platform.
+  and a single-cell ATAC-seq protocol. The DOGMAseq-LLL assay is designed to be compatible
+  with the 10x Genomics Chromium platform.
 modalities:
 - protein
 - rna
 - atac
-lib_struct: ""
+lib_struct: ''
 library_protocol: null
 library_kit: null
 sequence_protocol: Illumina NovaSeq 6000 (S2 Reagent Kit v1.5)
@@ -28,6 +28,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -36,6 +45,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: protein
@@ -67,7 +85,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: RNA-737K-arc-v1.txt
         filename: RNA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: a88cd21e801ae6f9a7d9a48b67ccf693
         location: local
       regions: null
@@ -102,7 +125,12 @@ library_spec:
       min_len: 15
       max_len: 15
       onlist: !Onlist
+        file_id: protein_feature_barcodes.txt
         filename: protein_feature_barcodes.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: b5920c1fc1d22927607c31c96f5cf03e
         location: local
       regions: null
@@ -139,7 +167,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: RNA-737K-arc-v1.txt
         filename: RNA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: a88cd21e801ae6f9a7d9a48b67ccf693
         location: local
       regions: null
@@ -230,7 +263,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: ATA-737K-arc-v1.txt
         filename: ATA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 3f9fc0f6ef9d72540ab010d0b5348aa1
         location: local
       regions: null

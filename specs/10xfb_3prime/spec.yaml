@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: 10xFB protein and RNA assay 3'
 name: 10xFB-3prime
 doi: https://www.10xgenomics.com/blog/san-diego-user-group-meeting-2018-recap
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: rna
@@ -72,7 +90,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt.gz
       filename: 737K-august-2016.txt.gz
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -130,7 +153,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: sample_bc_onlist.txt
       filename: sample_bc_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -188,7 +216,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt.gz
       filename: 737K-august-2016.txt.gz
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -235,7 +268,12 @@ library_spec:
     min_len: 15
     max_len: 15
     onlist: !Onlist
+      file_id: feature_barcode_onlist.txt
       filename: feature_barcode_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -271,7 +309,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: sample_bc_onlist.txt
       filename: sample_bc_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null

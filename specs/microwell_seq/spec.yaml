@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: null
 name: Microwell-seq
 doi: https://doi.org/10.1016/j.cell.2018.02.001
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: RNA
@@ -72,7 +90,12 @@ library_spec:
     min_len: 6
     max_len: 6
     onlist: !Onlist
+      file_id: bc1_onlist.txt
       filename: bc1_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -97,7 +120,12 @@ library_spec:
     min_len: 6
     max_len: 6
     onlist: !Onlist
+      file_id: bc2_onlist.txt
       filename: bc2_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -122,7 +150,12 @@ library_spec:
     min_len: 6
     max_len: 6
     onlist: !Onlist
+      file_id: bc3_onlist.txt
       filename: bc3_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -191,7 +224,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: sample_index_onlist.txt
       filename: sample_index_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -207,3 +245,4 @@ library_spec:
     onlist: null
     regions: null
     parent_id: RNA
+  parent_id: null

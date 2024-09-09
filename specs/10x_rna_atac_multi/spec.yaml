@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: 10x-ATAC-RNA-MULTI
 name: 10x-ATAC-RNA-MULTI/Illumina
 doi: https://doi.org/10.1038/s41592-019-0433-8
@@ -23,6 +23,15 @@ sequence_spec:
   min_len: 28
   max_len: 28
   strand: pos
+  files:
+  - !File
+    file_id: rna-R1.fastq.gz
+    filename: rna-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -31,6 +40,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: rna-I1.fastq.gz
+    filename: rna-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-R2.fastq.gz
   name: Read 2
@@ -39,6 +57,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: rna-R2.fastq.gz
+    filename: rna-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-R1.fastq.gz
   name: Read 1
@@ -47,6 +74,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: pos
+  files:
+  - !File
+    file_id: atac-R1.fastq.gz
+    filename: atac-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -55,6 +91,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: atac-I1.fastq.gz
+    filename: atac-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-I2.fastq.gz
   name: Index 2 (i5 index)
@@ -63,6 +108,15 @@ sequence_spec:
   min_len: 24
   max_len: 24
   strand: neg
+  files:
+  - !File
+    file_id: atac-I2.fastq.gz
+    filename: atac-I2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-R2.fastq.gz
   name: Read 2
@@ -71,6 +125,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: atac-R2.fastq.gz
+    filename: atac-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: multi-R1.fastq.gz
   name: Read 1
@@ -79,6 +142,15 @@ sequence_spec:
   min_len: 28
   max_len: 28
   strand: pos
+  files:
+  - !File
+    file_id: multi-R1.fastq.gz
+    filename: multi-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: multi-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -87,6 +159,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: multi-I1.fastq.gz
+    filename: multi-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: multi-R2.fastq.gz
   name: Read 2
@@ -95,6 +176,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: neg
+  files:
+  - !File
+    file_id: multi-R2.fastq.gz
+    filename: multi-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   parent_id: null
@@ -139,7 +229,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt
       filename: 737K-august-2016.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: f62a276e262fdd85262a889d0f48556b
       location: local
     regions: null
@@ -186,7 +281,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: index7_onlist_RNA-ATAC.txt
       filename: index7_onlist_RNA-ATAC.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: fcb5fe7d14ffc9984cd5450413c7a742
       location: local
     regions: null
@@ -233,7 +333,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-cratac-v1.txt
       filename: 737K-cratac-v1.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: ab645450cf30cc51077f6c030b665297
       location: local
     regions: null
@@ -291,7 +396,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: index7_onlist_RNA-ATAC.txt
       filename: index7_onlist_RNA-ATAC.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: fcb5fe7d14ffc9984cd5450413c7a742
       location: local
     regions: null
@@ -348,7 +458,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt
       filename: 737K-august-2016.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: f62a276e262fdd85262a889d0f48556b
       location: local
     regions: null
@@ -373,7 +488,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: MULTIbc_onlist.txt
       filename: MULTIbc_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: 66d841ec290d6c93e4b02638f97f3c23
       location: local
     regions: null
@@ -398,7 +518,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: index7_onlist_MULTI.txt
       filename: index7_onlist_MULTI.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: dea9fa960eb2f11b18d47f978c596a79
       location: local
     regions: null

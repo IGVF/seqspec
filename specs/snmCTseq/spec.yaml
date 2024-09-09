@@ -1,17 +1,20 @@
 !Assay
-seqspec_version: 0.0.0
-assay_id: 'snmCT-seq'
+seqspec_version: 0.3.0
+assay_id: snmCT-seq
 name: snmCT-seq
-doi: 'https://doi.org/10.1016/j.xgen.2022.100107'
-date: '09 March 2022'
-description: 'Single-nucleus methylcytosine and transcriptome sequencing (snmCT-seq). Specification assumes 2x151bp paired-end reads with 10bp dual indices based on snmC-seq3 and SMART-seq2. Bisulfite-converted gDNA reads (methyl) and cDNA reads (RNA) are separated in silico.'
+doi: https://doi.org/10.1016/j.xgen.2022.100107
+date: 09 March 2022
+description: Single-nucleus methylcytosine and transcriptome sequencing (snmCT-seq).
+  Specification assumes 2x151bp paired-end reads with 10bp dual indices based on snmC-seq3
+  and SMART-seq2. Bisulfite-converted gDNA reads (methyl) and cDNA reads (RNA) are
+  separated in silico.
 modalities:
 - methyl
 - rna
 lib_struct: ''
 library_protocol: null
 library_kit: null
-sequence_protocol: 'Illumina NextSeq500'
+sequence_protocol: Illumina NextSeq500
 sequence_kit: null
 sequence_spec:
 - !Read
@@ -22,6 +25,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -30,14 +42,23 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   parent_id: null
   region_id: methyl
-  region_type: 'methyl'
+  region_type: methyl
   name: methyl
-  sequence_type: 'joined'
-  sequence: 'AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNN'
+  sequence_type: joined
+  sequence: AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNN
   min_len: 89
   max_len: 1024
   onlist: null
@@ -45,10 +66,10 @@ library_spec:
   - !Region
     parent_id: methyl
     region_id: illumina_p5
-    region_type: 'illumina_p5'
+    region_type: illumina_p5
     name: illumina_p5
-    sequence_type: 'fixed'
-    sequence: 'AATGATACGGCGACCACCGAGATCTACAC'
+    sequence_type: fixed
+    sequence: AATGATACGGCGACCACCGAGATCTACAC
     min_len: 29
     max_len: 29
     onlist: null
@@ -56,10 +77,10 @@ library_spec:
   - !Region
     parent_id: methyl
     region_id: I2.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: I2.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNN'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNN
     min_len: 10
     max_len: 10
     onlist: null
@@ -67,24 +88,29 @@ library_spec:
     - !Region
       parent_id: I2.fastq.gz
       region_id: i5_barcode
-      region_type: 'index5'
+      region_type: index5
       name: i5_barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNNNNN
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: i5_onlist.txt
         filename: i5_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: c36c18a6ee1603758767878b794335f1
         location: local
       regions: null
   - !Region
     parent_id: methyl
     region_id: truseq_read1
-    region_type: 'truseq_read1'
+    region_type: truseq_read1
     name: truseq_read1
-    sequence_type: 'fixed'
-    sequence: 'ACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+    sequence_type: fixed
+    sequence: ACACTCTTTCCCTACACGACGCTCTTCCGATCT
     min_len: 33
     max_len: 33
     onlist: null
@@ -92,10 +118,10 @@ library_spec:
   - !Region
     parent_id: methyl
     region_id: R1.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: R1.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNNNNNNNX'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNNNNNNNX
     min_len: 151
     max_len: 151
     onlist: null
@@ -103,24 +129,29 @@ library_spec:
     - !Region
       parent_id: R1.fastq.gz
       region_id: cellbarcode
-      region_type: 'barcode'
+      region_type: barcode
       name: barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNN
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: cb_onlist.txt
         filename: cb_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 0691bed03feb775d9aff8b37fb4dc94b
         location: local
-      regions:
+      regions: null
     - !Region
       parent_id: R1.fastq.gz
       region_id: primer9H
-      region_type: 'methyl'
+      region_type: methyl
       name: linker
-      sequence_type: 'random'
-      sequence: 'HHHHHHHHH'
+      sequence_type: random
+      sequence: HHHHHHHHH
       min_len: 9
       max_len: 9
       onlist: null
@@ -128,10 +159,10 @@ library_spec:
     - !Region
       parent_id: R1.fastq.gz
       region_id: bisulfite_gDNA-1
-      region_type: 'methyl'
+      region_type: methyl
       name: methyl
-      sequence_type: 'random'
-      sequence: 'X'
+      sequence_type: random
+      sequence: X
       min_len: 1
       max_len: 134
       onlist: null
@@ -139,10 +170,10 @@ library_spec:
   - !Region
     parent_id: methyl
     region_id: R2.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: R2.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'XY'
+    sequence_type: joined
+    sequence: XY
     min_len: 151
     max_len: 151
     onlist: null
@@ -150,10 +181,10 @@ library_spec:
     - !Region
       parent_id: R2.fastq.gz
       region_id: bisulfite_gDNA-2
-      region_type: 'methyl'
+      region_type: methyl
       name: methyl
-      sequence_type: 'random'
-      sequence: 'X'
+      sequence_type: random
+      sequence: X
       min_len: 1
       max_len: 150
       onlist: null
@@ -161,10 +192,10 @@ library_spec:
     - !Region
       parent_id: R2.fastq.gz
       region_id: adaptase_CTs
-      region_type: 'linker'
+      region_type: linker
       name: linker
-      sequence_type: 'fixed'
-      sequence: 'Y'
+      sequence_type: fixed
+      sequence: Y
       min_len: 1
       max_len: 15
       onlist: null
@@ -172,21 +203,21 @@ library_spec:
   - !Region
     parent_id: methyl
     region_id: truseq_read2
-    region_type: 'truseq_read2'
+    region_type: truseq_read2
     name: truseq_read2
-    sequence_type: 'fixed'
-    sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+    sequence_type: fixed
+    sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
     min_len: 34
     max_len: 34
     onlist: null
     regions: null
   - !Region
-    parent_id: null
+    parent_id: methyl
     region_id: I1.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: I1.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNN'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNN
     min_len: 10
     max_len: 10
     onlist: null
@@ -194,24 +225,29 @@ library_spec:
     - !Region
       parent_id: I1.fastq.gz
       region_id: i7_barcode
-      region_type: 'barcode'
+      region_type: barcode
       name: i7_barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNNNNNN
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: i7_onlist.txt
         filename: i7_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 47874d94562f3b00125385a6c60daf9d
         location: local
       regions: null
   - !Region
     parent_id: methyl
     region_id: illumina_p7
-    region_type: 'illumina_p7'
+    region_type: illumina_p7
     name: illumina_p7
-    sequence_type: 'fixed'
-    sequence: 'ATCTCGTATGCCGTCTTCTGCTTG'
+    sequence_type: fixed
+    sequence: ATCTCGTATGCCGTCTTCTGCTTG
     min_len: 24
     max_len: 24
     onlist: null
@@ -219,10 +255,10 @@ library_spec:
 - !Region
   parent_id: null
   region_id: rna
-  region_type: 'rna'
+  region_type: rna
   name: rna
-  sequence_type: 'joined'
-  sequence: 'AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNN'
+  sequence_type: joined
+  sequence: AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNN
   min_len: 89
   max_len: 1024
   onlist: null
@@ -230,10 +266,10 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: illumina_p5
-    region_type: 'illumina_p5'
+    region_type: illumina_p5
     name: illumina_p5
-    sequence_type: 'fixed'
-    sequence: 'AATGATACGGCGACCACCGAGATCTACAC'
+    sequence_type: fixed
+    sequence: AATGATACGGCGACCACCGAGATCTACAC
     min_len: 29
     max_len: 29
     onlist: null
@@ -241,35 +277,40 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: I2.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: I2.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNN'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNN
     min_len: 10
     max_len: 10
     onlist: null
     regions:
     - !Region
-      parent_id: rna
+      parent_id: I2.fastq.gz
       region_id: i5_barcode
-      region_type: 'index5'
+      region_type: index5
       name: i5_barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNNNNN
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: i5_onlist.txt
         filename: i5_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: c36c18a6ee1603758767878b794335f1
         location: local
       regions: null
   - !Region
     parent_id: rna
     region_id: truseq_read1
-    region_type: 'truseq_read1'
+    region_type: truseq_read1
     name: truseq_read1
-    sequence_type: 'fixed'
-    sequence: 'ACACTCTTTCCCTACACGACGCTCTTCCGATCT'
+    sequence_type: fixed
+    sequence: ACACTCTTTCCCTACACGACGCTCTTCCGATCT
     min_len: 33
     max_len: 33
     onlist: null
@@ -277,10 +318,10 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: R1.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: R1.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNNNNNNNX'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNNNNNNNX
     min_len: 151
     max_len: 151
     onlist: null
@@ -288,24 +329,29 @@ library_spec:
     - !Region
       parent_id: R1.fastq.gz
       region_id: cellbarcode
-      region_type: 'barcode'
+      region_type: barcode
       name: barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNN
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: cb_onlist.txt
         filename: cb_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 0691bed03feb775d9aff8b37fb4dc94b
         location: local
-      regions:
+      regions: null
     - !Region
       parent_id: R1.fastq.gz
       region_id: primer9H
-      region_type: 'rna'
+      region_type: rna
       name: linker
-      sequence_type: 'random'
-      sequence: 'HHHHHHHHH'
+      sequence_type: random
+      sequence: HHHHHHHHH
       min_len: 9
       max_len: 9
       onlist: null
@@ -313,10 +359,10 @@ library_spec:
     - !Region
       parent_id: R1.fastq.gz
       region_id: transcriptome-1
-      region_type: 'rna'
+      region_type: rna
       name: rna
-      sequence_type: 'random'
-      sequence: 'X'
+      sequence_type: random
+      sequence: X
       min_len: 1
       max_len: 134
       onlist: null
@@ -324,10 +370,10 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: R2.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: R2.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'XY'
+    sequence_type: joined
+    sequence: XY
     min_len: 151
     max_len: 151
     onlist: null
@@ -335,10 +381,10 @@ library_spec:
     - !Region
       parent_id: R2.fastq.gz
       region_id: transcriptome-2
-      region_type: 'rna'
+      region_type: rna
       name: rna
-      sequence_type: 'random'
-      sequence: 'X'
+      sequence_type: random
+      sequence: X
       min_len: 1
       max_len: 150
       onlist: null
@@ -346,10 +392,10 @@ library_spec:
     - !Region
       parent_id: R2.fastq.gz
       region_id: adaptase_CTs
-      region_type: 'linker'
+      region_type: linker
       name: linker
-      sequence_type: 'fixed'
-      sequence: 'Y'
+      sequence_type: fixed
+      sequence: Y
       min_len: 1
       max_len: 15
       onlist: null
@@ -357,10 +403,10 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: truseq_read2
-    region_type: 'truseq_read2'
+    region_type: truseq_read2
     name: truseq_read2
-    sequence_type: 'fixed'
-    sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC'
+    sequence_type: fixed
+    sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
     min_len: 34
     max_len: 34
     onlist: null
@@ -368,10 +414,10 @@ library_spec:
   - !Region
     parent_id: rna
     region_id: I1.fastq.gz
-    region_type: 'fastq'
+    region_type: fastq
     name: I1.fastq.gz
-    sequence_type: 'joined'
-    sequence: 'NNNNNNNNNNNN'
+    sequence_type: joined
+    sequence: NNNNNNNNNNNN
     min_len: 10
     max_len: 10
     onlist: null
@@ -379,24 +425,29 @@ library_spec:
     - !Region
       parent_id: I1.fastq.gz
       region_id: i7_barcode
-      region_type: 'barcode'
+      region_type: barcode
       name: i7_barcode
-      sequence_type: 'onlist'
-      sequence: 'NNNNNNNNNNNN'
+      sequence_type: onlist
+      sequence: NNNNNNNNNNNN
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: i7_onlist.txt
         filename: i7_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 47874d94562f3b00125385a6c60daf9d
         location: local
       regions: null
   - !Region
     parent_id: rna
     region_id: illumina_p7
-    region_type: 'illumina_p7'
+    region_type: illumina_p7
     name: illumina_p7
-    sequence_type: 'fixed'
-    sequence: 'ATCTCGTATGCCGTCTTCTGCTTG'
+    sequence_type: fixed
+    sequence: ATCTCGTATGCCGTCTTCTGCTTG
     min_len: 24
     max_len: 24
     onlist: null

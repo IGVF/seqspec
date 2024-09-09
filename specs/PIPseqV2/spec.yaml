@@ -1,10 +1,10 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: null
 name: PIPseq V2
 doi: https://doi.org/10.1038/s41587-023-01685-z
 date: 06 March 2023
-description: PIP-seq is a method that allows us to perform high-throughput droplet 
+description: PIP-seq is a method that allows us to perform high-throughput droplet
   single cell RNA-seq without microfluidic device.
 modalities:
 - RNA
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: RNA
@@ -117,7 +135,12 @@ library_spec:
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: pip-seq_v2_bc1.tsv
         filename: pip-seq_v2_bc1.tsv
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
@@ -142,7 +165,12 @@ library_spec:
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: pip-seq_v2_bc2.tsv
         filename: pip-seq_v2_bc2.tsv
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
@@ -167,7 +195,12 @@ library_spec:
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: pip-seq_v2_bc3.tsv
         filename: pip-seq_v2_bc3.tsv
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
@@ -220,7 +253,7 @@ library_spec:
       region_id: ME2
       region_type: ME2
       name: ME2
-      sequence_type: fixed 
+      sequence_type: fixed
       sequence: CTGTCTCTTATACACATCT
       min_len: 19
       max_len: 19
@@ -258,7 +291,12 @@ library_spec:
       min_len: 8
       max_len: 8
       onlist: !Onlist
+        file_id: index7_onlist.txt
         filename: index7_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
@@ -273,3 +311,4 @@ library_spec:
     max_len: 24
     onlist: null
     regions: null
+  parent_id: null

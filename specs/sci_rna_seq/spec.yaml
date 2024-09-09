@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: null
 name: sci-RNA-seq
 doi: https://doi.org/10.1126/science.aam8940
@@ -21,6 +21,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -29,6 +38,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: RNA
@@ -70,11 +88,17 @@ library_spec:
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: index5_onlist.txt
         filename: index5_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
       parent_id: I2.fastq.gz
+    parent_id: RNA
   - !Region
     region_id: truseq_read1
     region_type: truseq_read1
@@ -116,11 +140,17 @@ library_spec:
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: barcode_onlist.txt
         filename: barcode_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
       parent_id: R1.fastq.gz
+    parent_id: RNA
   - !Region
     region_id: R2.fastq.gz
     region_type: gz
@@ -153,6 +183,7 @@ library_spec:
       onlist: null
       regions: null
       parent_id: R2.fastq.gz
+    parent_id: RNA
   - !Region
     region_id: nextera_read2
     region_type: nextera_read2
@@ -185,6 +216,7 @@ library_spec:
       onlist: null
       regions: null
       parent_id: nextera_read2
+    parent_id: RNA
   - !Region
     region_id: I1.fastq.gz
     region_type: gz
@@ -204,11 +236,17 @@ library_spec:
       min_len: 10
       max_len: 10
       onlist: !Onlist
+        file_id: index7_onlist.txt
         filename: index7_onlist.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: null
         location: local
       regions: null
       parent_id: I1.fastq.gz
+    parent_id: RNA
   - !Region
     region_id: illumina_p7
     region_type: illumina_p7
@@ -220,3 +258,4 @@ library_spec:
     onlist: null
     regions: null
     parent_id: RNA
+  parent_id: null

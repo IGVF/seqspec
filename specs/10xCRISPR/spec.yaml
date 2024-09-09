@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: 10xCRISPR
 name: 10xCRISPR
 doi: https://www.sigmaaldrich.com/US/en/collections/press/p265893918
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 28
   max_len: 28
   strand: pos
+  files:
+  - !File
+    file_id: rna-R1.fastq.gz
+    filename: rna-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: rna-I1.fastq.gz
+    filename: rna-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-R2.fastq.gz
   name: Read 2
@@ -38,6 +56,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: rna-R2.fastq.gz
+    filename: rna-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: crispr-R1.fastq.gz
   name: Read 1
@@ -46,6 +73,15 @@ sequence_spec:
   min_len: 28
   max_len: 28
   strand: pos
+  files:
+  - !File
+    file_id: crispr-R1.fastq.gz
+    filename: crispr-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: crispr-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -54,6 +90,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: crispr-I1.fastq.gz
+    filename: crispr-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: crispr-R2.fastq.gz
   name: Read 2
@@ -62,6 +107,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: crispr-R2.fastq.gz
+    filename: crispr-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: crispr
@@ -104,7 +158,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt.gz
       filename: 737K-august-2016.txt.gz
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -151,7 +210,12 @@ library_spec:
     min_len: 17
     max_len: 20
     onlist: !Onlist
+      file_id: sgrna_target_onlist.txt
       filename: sgrna_target_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: 46106962c063038ac7d9782d825dd125
       location: local
     regions: null
@@ -253,7 +317,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt.gz
       filename: 737K-august-2016.txt.gz
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -311,7 +380,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: sample_bc_onlist.txt
       filename: sample_bc_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null

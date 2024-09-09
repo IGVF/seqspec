@@ -1,6 +1,6 @@
 !Assay
 assay_id: ''
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 name: CRISPRa_screening
 doi: https://doi.org/10.1101/2023.03.28.534017
 date: 28 March 2023
@@ -23,6 +23,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -31,6 +40,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   parent_id: null
@@ -64,7 +82,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: 737K-august-2016.txt
         filename: 737K-august-2016.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: f62a276e262fdd85262a889d0f48556b
         location: local
       regions: null
@@ -155,7 +178,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: 737K-august-2016.txt
         filename: 737K-august-2016.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: f62a276e262fdd85262a889d0f48556b
         location: local
       regions: null
@@ -202,7 +230,12 @@ library_spec:
       min_len: 20
       max_len: 20
       onlist: !Onlist
+        file_id: onlist_gRNA_revcomp.txt
         filename: onlist_gRNA_revcomp.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 7996ff579579b15a1581ae62f53f8e2b
         location: local
       regions: null

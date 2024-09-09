@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: BD-Rhapsody-EB
 name: BD-Rhapsody-EB
 doi: https://scomix.bd.com/hc/en-us/articles/6990647359501-Rhapsody-WTA-Demo-Datasets-with-Enhanced-Cell-Capture-Beads
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: rna
@@ -72,7 +90,12 @@ library_spec:
     min_len: 0
     max_len: 3
     onlist: !Onlist
+      file_id: vb_onlist.txt
       filename: vb_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -86,7 +109,12 @@ library_spec:
     min_len: 9
     max_len: 9
     onlist: !Onlist
+      file_id: cls1_onlist.txt
       filename: cls1_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -111,7 +139,12 @@ library_spec:
     min_len: 9
     max_len: 9
     onlist: !Onlist
+      file_id: cls2_onlist.txt
       filename: cls2_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -136,7 +169,12 @@ library_spec:
     min_len: 9
     max_len: 9
     onlist: !Onlist
+      file_id: cls3_onlist.txt
       filename: cls3_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null
@@ -194,7 +232,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: sample_index_onlist.txt
       filename: sample_index_onlist.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: null
       location: local
     regions: null

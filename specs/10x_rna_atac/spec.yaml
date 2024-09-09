@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: 10xMultiome
 name: 10x-ATAC-RNA
 doi: https://www.globenewswire.com/en/news-release/2020/09/15/2093690/0/en/10x-Genomics-First-to-Market-With-Product-to-Simultaneously-Capture-Epigenome-and-Transcriptome.html
@@ -22,6 +22,15 @@ sequence_spec:
   min_len: 28
   max_len: 28
   strand: pos
+  files:
+  - !File
+    file_id: rna-R1.fastq.gz
+    filename: rna-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -30,6 +39,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: rna-I1.fastq.gz
+    filename: rna-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: rna-R2.fastq.gz
   name: Read 2
@@ -38,6 +56,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: rna-R2.fastq.gz
+    filename: rna-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-R1.fastq.gz
   name: Read 1
@@ -46,6 +73,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: pos
+  files:
+  - !File
+    file_id: atac-R1.fastq.gz
+    filename: atac-R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-I1.fastq.gz
   name: Index 1 (i7 index)
@@ -54,6 +90,15 @@ sequence_spec:
   min_len: 8
   max_len: 8
   strand: pos
+  files:
+  - !File
+    file_id: atac-I1.fastq.gz
+    filename: atac-I1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-I2.fastq.gz
   name: Index 2 (i5 index)
@@ -62,6 +107,15 @@ sequence_spec:
   min_len: 24
   max_len: 24
   strand: neg
+  files:
+  - !File
+    file_id: atac-I2.fastq.gz
+    filename: atac-I2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: atac-R2.fastq.gz
   name: Read 2
@@ -70,6 +124,15 @@ sequence_spec:
   min_len: 1
   max_len: 98
   strand: neg
+  files:
+  - !File
+    file_id: atac-R2.fastq.gz
+    filename: atac-R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   parent_id: null
@@ -114,7 +177,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-august-2016.txt
       filename: 737K-august-2016.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: f62a276e262fdd85262a889d0f48556b
       location: local
     regions: null
@@ -161,7 +229,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: index7_onlist_RNA-ATAC.txt
       filename: index7_onlist_RNA-ATAC.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: fcb5fe7d14ffc9984cd5450413c7a742
       location: local
     regions: null
@@ -208,7 +281,12 @@ library_spec:
     min_len: 16
     max_len: 16
     onlist: !Onlist
+      file_id: 737K-cratac-v1.txt
       filename: 737K-cratac-v1.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: ab645450cf30cc51077f6c030b665297
       location: local
     regions: null
@@ -266,7 +344,12 @@ library_spec:
     min_len: 8
     max_len: 8
     onlist: !Onlist
+      file_id: index7_onlist_RNA-ATAC.txt
       filename: index7_onlist_RNA-ATAC.txt
+      filetype: ''
+      filesize: 0
+      url: ''
+      urltype: ''
       md5: fcb5fe7d14ffc9984cd5450413c7a742
       location: local
     regions: null

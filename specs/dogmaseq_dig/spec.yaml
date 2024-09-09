@@ -1,5 +1,5 @@
 !Assay
-seqspec_version: 0.0.0
+seqspec_version: 0.3.0
 assay_id: DOGMAseq-DIG
 name: DOGMAseq-DIG/Illumina
 doi: https://doi.org/10.1186/s13059-022-02698-8
@@ -29,6 +29,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: pos
+  files:
+  - !File
+    file_id: R1.fastq.gz
+    filename: R1.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 - !Read
   read_id: R2.fastq.gz
   name: Read 2
@@ -37,6 +46,15 @@ sequence_spec:
   min_len: 1
   max_len: 250
   strand: neg
+  files:
+  - !File
+    file_id: R2.fastq.gz
+    filename: R2.fastq.gz
+    filetype: ''
+    filesize: 0
+    url: ''
+    urltype: ''
+    md5: ''
 library_spec:
 - !Region
   region_id: protein
@@ -68,7 +86,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: RNA-737K-arc-v1.txt
         filename: RNA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: a88cd21e801ae6f9a7d9a48b67ccf693
         location: local
       regions: null
@@ -103,7 +126,12 @@ library_spec:
       min_len: 15
       max_len: 15
       onlist: !Onlist
+        file_id: protein_feature_barcodes.txt
         filename: protein_feature_barcodes.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: b5920c1fc1d22927607c31c96f5cf03e
         location: local
       regions: null
@@ -140,7 +168,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: RNA-737K-arc-v1.txt
         filename: RNA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: a88cd21e801ae6f9a7d9a48b67ccf693
         location: local
       regions: null
@@ -175,7 +208,12 @@ library_spec:
       min_len: 15
       max_len: 15
       onlist: !Onlist
+        file_id: tag_0419_feature_barcodes.txt
         filename: tag_0419_feature_barcodes.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: de44ad6d5c4b9f381a352283a6831112
         location: local
       regions: null
@@ -212,7 +250,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: RNA-737K-arc-v1.txt
         filename: RNA-737K-arc-v1.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: a88cd21e801ae6f9a7d9a48b67ccf693
         location: local
       regions: null
@@ -314,7 +357,12 @@ library_spec:
       min_len: 16
       max_len: 16
       onlist: !Onlist
+        file_id: ATA-737K-arc-v1_rc.txt
         filename: ATA-737K-arc-v1_rc.txt
+        filetype: ''
+        filesize: 0
+        url: ''
+        urltype: ''
         md5: 3f9fc0f6ef9d72540ab010d0b5348aa1
         location: local
       regions: null
@@ -339,6 +387,6 @@ library_spec:
       max_len: 52
       onlist: null
       regions: null
-      parent_id: atac_R3_SRR18677641.fastq.gz
+      parent_id: atac_R3_SRR18677642.fastq.gz
     parent_id: atac
   parent_id: null
