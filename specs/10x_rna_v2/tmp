@@ -1,0 +1,272 @@
+!Assay
+seqspec_version: 0.0.0
+assay_id: "MPRA"
+sequencer: "TODO"
+name: mpra_shendure_assignment_80K
+doi: ""
+date: ""
+description: "Assignment library of the MPRA 80K design (caridac, neuro and random CREs)"
+modalities:
+  - rna
+  - rna
+  - rna
+lib_struct: ""
+library_protocol: null
+library_kit: null
+sequence_protocol: null
+sequence_kit: null
+sequence_spec:
+- !Read
+  read_id: R1.fastq.gz
+  name: Read 1
+  modality: illumina_truseq_prep
+  primer_id: generic_primer1
+  min_len: 1
+  max_len: 250
+  strand: pos
+- !Read
+  read_id: R2.fastq.gz
+  name: Read 2
+  modality: illumina_truseq_prep
+  primer_id: generic_primer2
+  min_len: 1
+  max_len: 250
+  strand: neg
+library_spec:
+  - !Region
+    parent_id: null
+    region_id: assignment
+    region_type: gdna # FIXME to DNA
+    name: Assignment
+    sequence_type: random
+    sequence: X
+    min_len: 0
+    max_len: 1024
+    onlist: null
+    regions:
+      - !Region
+        parent_id: assignment
+        region_id: barcode
+        region_type: barcode # or tag?
+        name: Barcode
+        sequence_type: random # can in theory be onlist, but this will be a long list with all possible combinations
+        sequence: XXXXXXXXXXXXXXX
+        min_len: 15
+        max_len: 15
+        onlist: null # or filename of all possible combinations
+        regions:
+          - !Region
+            parent_id: barcode
+            region_id: IGVF_neuro_S1_R2_001.fastq.gz
+            region_type: fastq # or tag?
+            name: IGVF_neuro_S1_R2_001.fastq.gz
+            sequence_type: random # can in theory be onlist, but this will be a long list with all possible combinations
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null # or filename of all possible combinations
+            regions: null
+      - !Region
+        parent_id: assignment
+        region_id: oligo
+        region_type: gdna # FIXME to dna
+        name: Oligo sequence
+        sequence_type: onlist
+        sequence: NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+        min_len: 300
+        max_len: 300
+        onlist: !Onlist
+          filename: /fast/groups/ag_kircher/work/MPRA/IGVF_Y1_design/final_design/results/final_design/design.fa.gz
+          location: local
+          md5: 5a34f80819cc26f33f641c9aad70be09
+        regions:
+          - !Region
+            parent_id: oligo
+            region_id: adapter_fwd
+            region_type: linker # FIXME to adapter
+            name: Forward adapter
+            sequence_type: fixed
+            sequence: AGGACCGGATCAACT
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+          - !Region
+            parent_id: oligo
+            region_id: designed_sequence
+            region_type: gdna # FIXME to dna
+            name: Designed oligo sequence for testing
+            sequence_type: onlist # or onlist because we knwo the design
+            sequence: NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+            min_len: 270
+            max_len: 270
+            onlist: !Onlist
+              filename: /fast/groups/ag_kircher/work/MPRA/IGVF_Y1_design/final_design/results/final_design/design.fa.gz
+              location: local
+              md5: 5a34f80819cc26f33f641c9aad70be09
+            regions:
+              - !Region
+                parent_id: designed_sequence
+                region_id: IGVF_neuro_S1_R1_001.fastq.gz
+                region_type: fastq
+                name: IGVF_neuro_S1_R1_001.fastq.gz
+                sequence_type: random
+                sequence: X
+                min_len: 1
+                max_len: 146
+                onlist: null
+                regions: null
+              - !Region
+                parent_id: designed_sequence
+                region_id: IGVF_neuro_S1_R3_001.fastq.gz
+                region_type: fastq
+                name: IGVF_neuro_S1_R3_001.fastq.gz
+                sequence_type: random
+                sequence: X
+                min_len: 1
+                max_len: 146
+                onlist: null
+                regions: null
+          - !Region
+            parent_id: assignment
+            region_id: adapter_rev
+            region_type: linker # FIXME to adapter
+            name: Reverse adapter
+            sequence_type: fixed
+            sequence: CATTGCGTGAACCGA
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+  - !Region
+    parent_id: null
+    region_id: dna_count_library
+    region_type: cdna # or tag?
+    name: DNA counts library
+    sequence_type: random
+    sequence: X
+    min_len: 1
+    max_len: 31
+    onlist: null
+    regions:
+      - !Region
+        parent_id: dna_count_library
+        region_id: dna_counts
+        region_type: barcode # or tag?
+        name: DNA counts
+        sequence_type: random
+        sequence: XXXXXXXXXXXXXXX
+        min_len: 15
+        max_len: 15
+        onlist: null
+        regions:
+          - !Region
+            parent_id: dna_counts
+            region_id: Ngn2-DNA-1_S1_R1_001.fastq.gz
+            region_type: fastq
+            name: Ngn2-DNA-1_S1_R1_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+          - !Region
+            parent_id: dna_counts
+            region_id: Ngn2-DNA-1_S1_R3_001.fastq.gz
+            region_type: fastq # or tag or bc
+            name: Ngn2-DNA-1_S1_R3_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+      - !Region
+        parent_id: dna_count_library
+        region_id: dna_umis
+        region_type: umi
+        name: DNA UMIs
+        sequence_type: random
+        sequence: XXXXXXXXXXXXXXXX
+        min_len: 16
+        max_len: 16
+        onlist: null
+        regions:
+          - !Region
+            parent_id: dna_counts
+            region_id: Ngn2-DNA-1_S1_R2_001.fastq.gz
+            region_type: fastq # or tag or bc
+            name: Ngn2-DNA-1_S1_R2_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+  - !Region
+    parent_id: null
+    region_id: rna_count_library
+    region_type: cdna # or tag?
+    name: RNA counts library
+    sequence_type: random
+    sequence: X
+    min_len: 1
+    max_len: 31
+    onlist: null
+    regions:
+      - !Region
+        parent_id: rna_count_library
+        region_id: rna_counts
+        region_type: barcode # or tag?
+        name: DNA counts
+        sequence_type: random
+        sequence: XXXXXXXXXXXXXXX
+        min_len: 15
+        max_len: 15
+        onlist: null
+        regions:
+          - !Region
+            parent_id: rna_counts
+            region_id: Ngn2-RNA-1_S4_R1_001.fastq.gz
+            region_type: fastq
+            name: Ngn2-RNA-1_S4_R1_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+          - !Region
+            parent_id: rna_counts
+            region_id: Ngn2-RNA-1_S4_R3_001.fastq.gz
+            region_type: fastq
+            name: Ngn2-RNA-1_S4_R3_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXX
+            min_len: 15
+            max_len: 15
+            onlist: null
+            regions: null
+      - !Region
+        parent_id: rna_count_library
+        region_id: rna_umis
+        region_type: umi
+        name: DNA UMIs
+        sequence_type: random
+        sequence: XXXXXXXXXXXXXXXX
+        min_len: 16
+        max_len: 16
+        onlist: null
+        regions:
+          - !Region
+            parent_id: dna_counts
+            region_id: Ngn2-RNA-1_S4_R2_001.fastq.gz
+            region_type: fastq
+            name: Ngn2-RNA-1_S4_R2_001.fastq.gz
+            sequence_type: random
+            sequence: XXXXXXXXXXXXXXXX
+            min_len: 16
+            max_len: 16
+            onlist: null
+            regions: null
